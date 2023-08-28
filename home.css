@@ -1,0 +1,530 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* create nav_top */
+.nav_top {
+    display: flex;
+
+}
+
+.ul_top {
+    background-color: rgb(236, 138, 53);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+.ul_top li {
+    margin-top: 10px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+nav .ul_down {
+    background-color: #2E444F;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    height: 12vh;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav .ul_down li {
+    position: relative;
+    right: 15%;
+    margin-inline: 40px;
+    font-size: 18px;
+}
+/* logo */
+.logo{
+    position: relative;
+    right: 40%;
+}
+.logo img{
+    width: 70%;
+}
+
+/* design a weeding card */
+.wedding_card {
+    background-image: url(/images/weeding\ images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+    color: azure;
+}
+
+.wedding_card h3 {
+    font-size: 30px;
+    font-style: italic;
+    margin-bottom: 3%;
+}
+
+.wedding_card .front-text {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.wedding_card .front-text em {
+    color: rgb(236, 138, 53);
+}
+
+.wedding_card .wedding_line {
+    font-size: 20px;
+    margin-top: 5%;
+}
+
+/* wedding button */
+.wedding_btn {
+    display: flex;
+    margin-top: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.wedding_btn p {
+    font-size: 17px;
+}
+ /* create a card */
+ .card_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    bottom: 55px;
+ }
+ .card_container .img-fluid{
+    width: 330px;
+    height: 34vh;
+    background-image: url(/images/bacgrond\ card\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3px;
+ }
+ .card_container .img-fluid i{
+    font-size: 60px;
+    margin: 10px;
+    color: rgb(236, 138, 53);
+ }
+ .card_container .img-fluid:hover{
+    zoom: 2;
+    transition: 2s ease;
+    /* box-shadow: 5px 10px 15px rgb(236, 138, 53); */
+ }
+ #portfolio-flters li {
+    display: inline-block;
+    font-weight: 500;
+    color: var(--dark);
+    cursor: pointer;
+    transition: .5s;
+    border-bottom: 2px solid transparent;
+}
+
+#portfolio-flters li:hover,
+#portfolio-flters li.active {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.portfolio-img {
+    position: relative;
+    
+}
+
+.portfolio-btn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(236, 138, 53, 0.748);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    /* padding-bottom: 100px !important; */
+    opacity: 0;
+    transition: .5s;
+    color: white;
+}
+
+.portfolio-item:hover .portfolio-btn {
+    opacity: 1;
+    padding-bottom: 30px !important;
+}
+.portfolio-item {
+    margin: 10px;
+}
+/* detail service */
+.detailed_service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 20%;
+}
+.detailed_service .detail{
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+.detailed_service .detail h3{
+    font-style: italic;
+    color: rgb(236, 138, 53);
+    font-size: 20px;
+}
+.detailed_service .detail h1{
+    font-size: 45px;
+    font-weight:850;
+    color: rgba(0, 0, 0, 0.742);
+}
+.detailed_service .detail h4{
+    font-size: 20px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.615);
+    border-left: 5px solid rgb(236, 138, 53);
+    padding: 20px;
+}
+.detailed_service .detail p{
+ margin: 3px;
+ color: rgba(0, 0, 0, 0.544);
+}
+/* image  */
+.detailed_service .image_cel{
+    width: 20%;
+    position:absolute;
+    right: 80%;
+    top: 240%;
+    border: 5px solid white;
+    margin-bottom: 20%;
+}
+
+/* create offer event */
+.card_container .img-offer{
+     width: 370px;
+    height: 50vh;
+    /* background-image: url(/images/bacgrond\ card\ 2.jpg); */
+    background-repeat: no-repeat;
+}
+/* .card_container .img-offer .offer_btn{
+   background-color: rgb(236, 138, 53);
+   border: 2px solid rgb(236, 138, 53);
+   border-radius: 40%;
+   padding: 20px;
+   margin: 5px;
+} */
+.card_container .img-offer img{
+    width: 100%;
+    height: 50vh;
+}
+.card_container .img-offer h1{
+ color: black;
+ font-size: 60px;
+ font-weight: 900;
+}
+.card_container .img-offer h3{
+    color: rgb(236, 138, 53);
+    font-size: 25px;
+}
+/* portfolio btn  */
+ .portfolio-btn i{
+    border: 1px solid white;
+    font-size: 40px;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 80px;
+ }
+ .portfolio-btn i:hover{
+    color:azure;
+ }
+ .portfolio-btn h3{
+    margin: 5px;
+    color: black;
+ }
+ .rate{
+    background-color: #8b9da6;
+    color: azure;
+    width: 100%;
+    height: 40vh;
+    background-image: url(/images/rating.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: pixelated;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+ }
+ .rate .rating{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+ .rate .rating i{
+    font-size: 55px;
+    padding: 10px;
+    color: rgb(236, 138, 53);
+ }
+
+ .rate .rating h2{
+    font-size: 45px;
+ }
+ .rate .rating p{
+    font-size: 18px;
+    color: azure;
+    font-weight: bold;
+ }
+ .rate .rating h2 span{
+    color: rgb(236, 138, 53);
+ }
+ .service_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+ }
+ .service_container .img-fluid{
+    width: 370px;
+    height: 40vh;
+    background-image: url(/images/bacgrond\ card\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3px;
+ }
+ .service_container .img-fluid i{
+    font-size: 60px;
+    margin: 10px;
+    color: rgb(236, 138, 53);
+ }
+ /* service name */
+  .service_name{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .service_name h2{
+    color: rgb(236, 138, 53);
+    font-size: 30px;
+  }
+  .service_name h1{
+    font-size: 50px;
+    font-weight: bolder;
+  }
+  .service_name p{
+    font-size: 17px;
+  }
+  /* i have use the detailes container of same div */
+  /* how it work */
+  .detail .work{
+    margin: 20px;
+  }
+  .detail .work .work_type h2{
+    /* color: black; */
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .detail .work .work_type i{
+    color: rgb(236, 138, 53);
+    font-size: 50px;
+    margin: 3px;
+  }
+  .detail .work .work_type p{
+    /* text-align: center; */
+    justify-content: center;
+    padding: 5px;
+    margin: 3px;
+  }
+  /* event planner */
+  .event_card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(/images/pllaner.jpg);
+    padding: 20px;
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .event_card .event_planner img{
+    height: 65vh;
+    width: 90%;
+    position: relative;
+    bottom: 4cm;
+    z-index: 10;
+  }
+  .event_card .event_planner .bg-img{
+    z-index: -0.3;
+    width: 60%;
+    height: 25vh;
+    position: relative;
+    top: 5cm;
+  }
+  .event_planner h2{
+    color: rgb(236, 138, 53);
+    margin: 3px;
+  }
+  .event_planner h1{
+    color: azure;
+    font-size: 50px;
+    margin: 3px;
+  }
+  .event_planner button{
+    border: 2px solid rgb(236, 138, 53);
+    border-radius: 80px;
+    margin: 5px;
+    padding: 10px;
+    color: azure;
+    background-color: rgb(236, 138, 53);
+    font-size: 18px;
+  }
+   /* price plan */
+   .price_container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px;
+    margin: 5px;
+   }
+   .card_price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .card_price .price{
+    align-items: center;
+    /* justify-content: center; */
+   }
+   .card_price .price h2{
+    font-size: 30px;
+   }
+   .card_price .price h1{
+    color: rgb(236, 138, 53);
+    font-size: 50px;
+   }
+   .card_price .price span{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+   }
+   .card_price .card-img img{
+    width: 100%;
+    height: 50vh;
+    border: 10px solid rgb(236, 138, 53);
+    border-radius: 5px 40px 5px 65px;
+   }
+   .price_container .price_plan{
+    margin: 3px;
+   }
+   .price_container .price_plan h2{
+    color: rgb(236, 138, 53);
+    font-style: italic;
+    font-size: 25px;
+   }
+   .price_container .price_plan h1{
+    font-size: 45px;
+    font-weight: 800;
+   }
+   .price_container p{
+    color: #2E444F;
+    margin: 5px;
+   }
+   .price_container .price_plan button{
+    border: 2px solid rgb(236, 138, 53);
+    background-color: rgb(236, 138, 53);
+    border-radius: 80px;
+    font-size: 20px;
+    padding: 15px;
+    margin: 5px;
+    color: azure;
+   }
+
+
+/* create a footer */
+.footer {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 22px;
+    background-color: #2E444F;
+    color: white;
+    margin-top: 1px;
+    list-style-type: none;
+}
+
+.down_footer {
+    background-color: rgb(236, 138, 53);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.down_footer ul {
+    display: flex;
+    padding: 2px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.down_footer ul li {
+    margin: 5px;
+}
+
+.footer .list_item li:hover {
+    color: rgb(236, 138, 53);
+    cursor: pointer;
+}
+.footer .list_item li{
+    margin: 5px;
+}
+
+.footer .list_item li i {
+    border: 1px solid;
+    border-radius: 100%;
+    margin: 3px;
+    padding: 6px;
+    color: rgb(236, 138, 53);
+    font-size: 10px;
+    font-weight: 800;
+
+}
+
+.down_footer p {
+    margin: 5px;
+}
+
+.footer .list_item h3 {
+    border-bottom: 1px solid rgb(236, 138, 53);
+    margin: 5px;
+}
+.list_item img{
+    width: 50%;
+}
+.list_item p{
+    font-size: 18px;
+}
